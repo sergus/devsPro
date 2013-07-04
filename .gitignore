@@ -42,3 +42,7 @@
 # other
 *.iws
 
+*.class
+/target
+.classpath
+.settings
