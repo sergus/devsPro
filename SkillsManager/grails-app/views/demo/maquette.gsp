@@ -42,6 +42,7 @@
 						<li class="active"><a href="#">Employés</a></li>
 						<li><a href="#" onclick='overlay()'><g:img dir="images/skin" file="recherche.png"/></a></li>
 						<li>
+							test
 							<g:img dir="images/skin" file="preferences.png"/>
 							<ul>
 								<li><g:link controller="agence" action="list">Agences</g:link></li>
