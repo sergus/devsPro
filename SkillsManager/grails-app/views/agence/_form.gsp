@@ -2,11 +2,11 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: agenceInstance, field: 'nom', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: agenceInstance, field: 'nom', 'error')} required">
 	<label for="nom">
 		<g:message code="agence.nom.label" default="Nom" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="nom" value="${agenceInstance?.nom}"/>
+	<g:textField name="nom" required="" value="${agenceInstance?.nom}"/>
 </div>
 

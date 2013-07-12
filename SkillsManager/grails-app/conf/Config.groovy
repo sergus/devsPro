@@ -89,3 +89,8 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+//Configuration des contraintes par défaut
+grails.gorm.default.constraints = {
+	'*'(blank: false)
+}
