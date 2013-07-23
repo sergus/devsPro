@@ -28,7 +28,7 @@
 					<thead>
 						<tr>
 						
-							<g:sortableColumn property="libelle" title="${message(code: 'typeCompetence.libelle.label', default: 'Libelle')}" />
+							<g:sortableColumn property="name" title="${message(code: 'typeCompetence.name.label', default: 'Name')}" />
 						
 						</tr>
 					</thead>
@@ -36,7 +36,7 @@
 					<g:each in="${typeCompetenceInstanceList}" status="i" var="typeCompetenceInstance">
 						<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 						
-							<td><g:link action="show" id="${typeCompetenceInstance.id}">${fieldValue(bean: typeCompetenceInstance, field: "libelle")}</g:link></td>
+							<td><g:link action="show" id="${typeCompetenceInstance.id}">${fieldValue(bean: typeCompetenceInstance, field: "name")}</g:link></td>
 						
 						</tr>
 					</g:each>

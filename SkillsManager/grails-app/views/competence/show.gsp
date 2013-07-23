@@ -26,11 +26,11 @@
 				</g:if>
 				<ol class="property-list competence">
 				
-					<g:if test="${competenceInstance?.libelle}">
+					<g:if test="${competenceInstance?.name}">
 					<li class="fieldcontain">
-						<span id="libelle-label" class="property-label"><g:message code="competence.libelle.label" default="Libelle" /></span>
+						<span id="name-label" class="property-label"><g:message code="competence.name.label" default="Name" /></span>
 						
-							<span class="property-value" aria-labelledby="libelle-label"><g:fieldValue bean="${competenceInstance}" field="libelle"/></span>
+							<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${competenceInstance}" field="name"/></span>
 						
 					</li>
 					</g:if>

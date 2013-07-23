@@ -19,7 +19,7 @@
 			<div id="show-${domainClass.propertyName}" class="content scaffold-show" role="main">
 				<h3><g:message code="default.show.label" args="[entityName]" /></h3>
 				<g:if test="\${flash.message}">
-					<div data-alert="" class="alert-box radius">
+					<div data-alert="" class="alert-box success radius">
 						<div class="message" role="status">\${flash.message}</div>
 		                <a href="" class="close">×</a>
 	                </div>

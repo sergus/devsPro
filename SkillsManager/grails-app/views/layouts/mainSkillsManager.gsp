@@ -17,14 +17,15 @@
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'skillsmanager.css')}" type="text/css">
 		
 		
-<%--		<link rel="stylesheet" href="${resource(dir: 'js/jquery-ui-1.10.1.custom/css/sunny', file: 'jquery-ui-1.10.1.custom.css')}" type="text/css">--%>
-<%--		<link rel="stylesheet" href="${resource(dir: 'js/jquery-ui-1.10.1.custom/css/sunny', file: 'jquery-ui-1.10.1.custom.min.css')}" type="text/css">--%>
+		<link rel="stylesheet" href="${resource(dir: 'js/jquery-ui-1.10.1.custom/css/sunny', file: 'jquery-ui-1.10.1.custom.css')}" type="text/css">
+		<link rel="stylesheet" href="${resource(dir: 'js/jquery-ui-1.10.1.custom/css/sunny', file: 'jquery-ui-1.10.1.custom.min.css')}" type="text/css">
 
 
-<%--		<g:javascript library="jquery-ui-1.10.1.custom/js/jquery-1.9.1"/>		--%>
+		<g:javascript src="jquery-ui-1.10.1.custom/js/jquery-1.9.1.js"/>
+		<g:javascript src="jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.js"/>		
 		
-		<script src="jquery-ui-1.10.1.custom/js/jquery-1.9.1.js"></script>
-		<script src="js/jquery-1.10.2.js"></script>
+<%--		<script src="jquery-ui-1.10.1.custom/js/jquery-1.9.1.js"></script>--%>
+<%--		<script src="js/jquery-1.10.2.js"></script>--%>
 		
 		<g:layoutHead/>
 		<r:layoutResources />
@@ -52,6 +53,7 @@
 	  	</g:javascript>
 	</head>
 	<body>
+		<g:render template="../recherche/recherche"/>
 		<div id="canevas">
 			<div class="row" id="doc-topbar">
 				<div class="large-12 columns">
@@ -70,7 +72,7 @@
 								<li class="divider"></li>
 								<li class=""><a href="#">CV</a></li>
 								<li class="divider"></li>
-								<li class=""><a href="#"><g:img dir="images/skin" file="recherche.png"/></a></li>
+								<li class=""><a href="#" onclick="overlay()"><g:img dir="images/skin" file="recherche.png"/></a></li>
 								<li class="divider"></li>
 								<li class="has-dropdown"><a href="#"><g:img dir="images/skin" file="preferences.png"/></a>
 								<ul class="dropdown">

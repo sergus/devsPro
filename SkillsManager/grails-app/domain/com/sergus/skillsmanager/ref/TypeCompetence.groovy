@@ -2,7 +2,7 @@ package com.sergus.skillsmanager.ref
 
 class TypeCompetence {
 
-	String libelle
+	String name
 
 	static constraints = {
 	}

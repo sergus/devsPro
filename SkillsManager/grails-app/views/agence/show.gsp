@@ -19,18 +19,18 @@
 			<div id="show-agence" class="content scaffold-show" role="main">
 				<h3><g:message code="default.show.label" args="[entityName]" /></h3>
 				<g:if test="${flash.message}">
-					<div data-alert="" class="alert-box radius">
+					<div data-alert="" class="alert-box success radius">
 						<div class="message" role="status">${flash.message}</div>
 		                <a href="" class="close">×</a>
 	                </div>
 				</g:if>
 				<ol class="property-list agence">
 				
-					<g:if test="${agenceInstance?.nom}">
+					<g:if test="${agenceInstance?.name}">
 					<li class="fieldcontain">
-						<span id="nom-label" class="property-label"><g:message code="agence.nom.label" default="Nom" /></span>
+						<span id="name-label" class="property-label"><g:message code="agence.name.label" default="Name" /></span>
 						
-							<span class="property-value" aria-labelledby="nom-label"><g:fieldValue bean="${agenceInstance}" field="nom"/></span>
+							<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${agenceInstance}" field="name"/></span>
 						
 					</li>
 					</g:if>

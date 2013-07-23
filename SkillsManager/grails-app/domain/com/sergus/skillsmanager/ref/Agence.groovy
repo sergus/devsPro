@@ -2,7 +2,7 @@ package com.sergus.skillsmanager.ref
 
 class Agence {
 
-	String nom
+	String name
 	
     static constraints = {
     }

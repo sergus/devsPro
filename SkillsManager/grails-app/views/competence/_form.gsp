@@ -2,12 +2,12 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: competenceInstance, field: 'libelle', 'error')} required">
-	<label for="libelle">
-		<g:message code="competence.libelle.label" default="Libelle" />
+<div class="fieldcontain ${hasErrors(bean: competenceInstance, field: 'name', 'error')} required">
+	<label for="name">
+		<g:message code="competence.name.label" default="Name" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="libelle" required="" value="${competenceInstance?.libelle}"/>
+	<g:textField name="name" required="" value="${competenceInstance?.name}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: competenceInstance, field: 'typeCompetence', 'error')} required">
